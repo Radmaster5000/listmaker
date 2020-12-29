@@ -1,17 +1,14 @@
 
+find /Users/Radmaster5000/Desktop/iTunesPlaylists/ -name "* *.m3u8" -type f -print0 | \
+	while read -d $'\0' f; do mv -v "$f" "${f// /_}"; done
 
 arr=(/Users/Radmaster5000/Desktop/iTunesPlaylists/*)
 prefix="/Users/Radmaster5000/Desktop/iTunesPlaylists/"
 suffix=".m3u8"
 
-#for FILE in /Users/Radmaster5000/Desktop/iTunesPlaylists/*; do echo $FILE; done
-
 for ((i=0; i<${#arr[@]}; i++)); do
-	if [[ ${arr[$i]} = *[[:space:]]* ]]; then
-			listName=${arr[$i]// /_}
-	else
-		listName=${arr[$i]}
-	fi
+
+	listName=${arr[$i]}
 
 	newListName=${listName#"$prefix"}
 	newListName=${newListName%"$suffix"}
