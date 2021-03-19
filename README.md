@@ -2,6 +2,23 @@
 
 This is a short script to run through my iTunes playlists and change the paths of the tracks, creating identical playlists that will work on a different MP3 player.
 
+It ran into an issue with playlists that have spaces in their names, so the first part of the program replaces spaces with underscores.
 
-It works but runs into issues with playlists that have spaces in their titles. Due to the risk of breaking what I have so far, I've created another branch to work on renaming files that contain spaces.
+
+**************
+
+
+HOW TO USE:
+
+* Save iTunes playlists into iTunesPlaylists file on desktop. 
+	
+* Navigate to listMaker folder
+
+USAGE: bash textify.sh
+
+* Sony Walkman friendly playlist will be created in the WalkmanPlaylists folder on desktop
+
+* Drop new playlist into MUSIC folder on Walkman 
+
+
 
