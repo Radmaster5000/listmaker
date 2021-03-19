@@ -4,6 +4,8 @@ This is a short script to run through my iTunes playlists and change the paths o
 
 It ran into an issue with playlists that have spaces in their names, so the first part of the program replaces spaces with underscores.
 
+Make sure to copy music files onto Walkman from iTunes folder.
+
 
 **************
 
